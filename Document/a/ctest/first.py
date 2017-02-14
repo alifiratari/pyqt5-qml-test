@@ -49,7 +49,7 @@ engine = QQmlEngine()
 
 # Create a component factory and load the QML script.
 component = QQmlComponent(engine)
-component.loadUrl(QUrl('example.qml'))
+component.loadUrl(QUrl('Trst.qml'))
 
 # Create an instance of the component.
 person = component.create()

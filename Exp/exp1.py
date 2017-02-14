@@ -87,6 +87,7 @@ class App(object):
         ## Text değiştirildiğinde değiştirilen texti statusbara yazması için.
         self.refresh = Refresh()
         self.Screen.messageRequired1.connect(self.refresh.emit_refresh)
+        self.Screen.messageRequired1.connect(lambda: print(self.Textfield.property("text")))
         self.refresh.signal.connect(self.Screen.refreshMessage)
 
         ## Test
