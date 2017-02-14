@@ -76,7 +76,7 @@ class App(object):
         self.Screen.findChild( QObject, "exitButton" ).clicked.connect( exit )
 
         ## Statusbara yazı yazdırma
-        self.Screen.updateMessage( "Click to get the current date and time" )
+        self.Screen.updateMessage( "Click to get the current date an1d time" )
 
         ## Butona tıklandığında saati statusbara yazması için.
         self.now = Now()
